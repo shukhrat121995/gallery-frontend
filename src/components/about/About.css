@@ -1,0 +1,47 @@
+.about-hero {
+  height: 42vh;
+  background-position: 20% center;
+  max-height: 420px;
+  background-size: cover;
+  min-height: 250px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.about-text {
+  padding: 0 15px 0 15px;
+  font-size: 28px;
+  width: 100%;
+}
+
+.about-text h1 {
+  padding: 0 15px 0 15px;
+  font-size: 28px;
+}
+
+.about-text h3 {
+  margin-top: 10px;
+  padding: 0 15px 0 15px;
+  font-size: 18px;
+}
+
+.about-facts {
+  width: 700px;
+  max-width: 100%;
+  text-align: left;
+  padding: 10px;
+  margin: 40px auto;
+}
+
+.about-facts h1 {
+  margin-top: 10px;
+}
+
+.about-facts p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

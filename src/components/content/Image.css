@@ -1,0 +1,141 @@
+.container {
+  position: relative;
+  transition: 0.5s;
+}
+.container img .fa-arrow-down {
+  display: block;
+}
+.container:hover {
+  cursor: zoom-in;
+}
+.container .fa-arrow-down {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1rem;
+  color: #767676;
+  border: 1px solid transparent;
+  padding: 10px;
+  background-color: hsla(0, 0%, 100%, 0.9);
+  border-radius: 5px;
+  visibility: hidden;
+  transition-property: opacity, visibility;
+  transition-timing-function: ease-in-out, ease-in-out;
+  transition-delay: 0s, 0s;
+  z-index: 1;
+}
+.container:hover .fa-arrow-down,
+.title {
+  visibility: visible;
+  font-size: 12px;
+}
+.container:hover .title {
+  visibility: visible;
+}
+.container:hover .overlay::before {
+  opacity: 1;
+}
+.container:hover .overlay-top::before {
+  opacity: 1;
+}
+.fa-arrow-down:hover {
+  color: #000;
+}
+.container p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 1rem;
+  text-align: left;
+  visibility: hidden;
+  color: hsla(0, 0%, 100%, 0.9);
+  transition-property: opacity, visibility;
+  transition-duration: 0.1s, 0.1s;
+  transition-timing-function: ease-in-out, ease-in-out;
+  transition-delay: 0s, 0s;
+  z-index: 1;
+  max-width: 70%;
+}
+
+.container span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 1rem;
+  text-align: left;
+  visibility: hidden;
+  color: hsla(0, 0%, 100%, 0.9);
+  transition-property: opacity, visibility;
+  transition-duration: 0.1s, 0.1s;
+  transition-timing-function: ease-in-out, ease-in-out;
+  transition-delay: 0s, 0s;
+  z-index: 1;
+  max-width: 70%;
+}
+
+.overlay::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  opacity: 0;
+  border-radius: 5px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+  transition: opacity 0.2s;
+  transition-property: opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  cursor: zoom-in;
+}
+
+.overlay:hover::before {
+  opacity: 1;
+}
+
+.overlay-top::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  opacity: 0;
+  border-radius: 5px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.9) 0%,
+    transparent 100%
+  );
+  transition: opacity 0.2s;
+  transition-property: opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  cursor: zoom-in;
+}
+
+.overlay-top:hover::before {
+  opacity: 1;
+}
+
+.light_box {
+  display: none !important;
+}
+
+@media screen and (max-width: 960px) {
+  .title {
+    visibility: visible !important;
+  }
+  .fa-arrow-down {
+    visibility: visible !important;
+  }
+  .overlay::before {
+    opacity: 1;
+  }
+  .overlay-top::before {
+    opacity: 1;
+  }
+}

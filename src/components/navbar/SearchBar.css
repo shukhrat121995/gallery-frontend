@@ -1,0 +1,129 @@
+.form-search {
+  position: relative;
+  display: flex;
+  top: 0;
+  width: 100%;
+  left: 0;
+  transition: all 0.5s;
+  height: 40px;
+  background: white;
+  box-sizing: border-box;
+  border-radius: 24px;
+}
+
+.searchButton {
+  display: flex;
+  background-color: transparent;
+  border: none;
+}
+
+.searchButton:focus {
+  outline: 0;
+}
+
+.input-search {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  line-height: 30px;
+  outline: 0;
+  border: 0;
+  font-size: 1em;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.span-fa {
+  margin-left: 20px;
+  width: 40px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 40px;
+  background: white;
+}
+.fa {
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 50%;
+  float: right;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  color: #a5a5a5;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.fa:hover {
+  color: black;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+@media screen and (max-width: 960px) {
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+  }
+  .form-search {
+    position: relative;
+    display: flex;
+    top: 0;
+    width: 100%;
+    left: 0;
+    transition: all 0.5s;
+    height: 40px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 24px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .searchButton {
+    display: flex;
+    background-color: transparent;
+    border: none;
+  }
+
+  .input-search {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    font-size: 1em;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .span-fa {
+    width: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 40px;
+    background: white;
+  }
+  .fa {
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 50%;
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: #a5a5a5;
+    font-size: 20px;
+  }
+}

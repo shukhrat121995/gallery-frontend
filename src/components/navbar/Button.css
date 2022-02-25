@@ -1,0 +1,26 @@
+:root {
+  --primary: #1888ff;
+}
+
+.btn {
+  padding: 8px 20px;
+  width: max-content;
+  margin-left: 20px;
+  border-radius: 4px;
+  margin-right: 20px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  background-color: var(--primary);
+}
+
+.btn-on {
+  padding: 6px 18px;
+  background-color: transparent;
+  color: var(--primary);
+  border-radius: 4px;
+  pointer-events: none;
+  border: 2px solid var(--primary);
+}

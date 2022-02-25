@@ -1,0 +1,18 @@
+*{
+  font-family: 'Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.home, .categories, .contact, .sign-in, .characters{
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.title{
+  margin-top: 60px;
+}

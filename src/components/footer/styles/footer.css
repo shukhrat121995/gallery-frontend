@@ -1,0 +1,8 @@
+.link-style {
+  text-decoration: none;
+  color: white;
+}
+.link-style:hover {
+  color: #1888ff;
+  transition: 200ms ease-in;
+}
