@@ -145,7 +145,7 @@ class Home extends React.PureComponent {
                   id={img.id}
                   url={img.image_thumbnail}
                   key={Math.random()}
-                  title={img.collection}
+                  title={img.collection.title}
                   desc={img.description}
                   full={img.image}
                   down={img.image}

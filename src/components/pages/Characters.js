@@ -19,7 +19,7 @@ export default function Characters() {
 
     document.title = "Star Wars Wallpapers | Characters";
     const fetchImages = () => {
-      const apiRoot = `${process.env.REACT_APP_API_URL}/api/characters`;
+      const apiRoot = `${process.env.REACT_APP_API_URL}/api/category`;
       //const accessKey = process.env.REACT_APP_ACCESSKEY;
 
       axios
@@ -81,7 +81,7 @@ export default function Characters() {
         <WrapperImages className="wrapper-image">
           {images.map((image) => (
             <UnsplashImage
-              url={image.image}
+              url={`${process.env.REACT_APP_API_URL}` + image.image}
               key={Math.random()}
               rank={image.rank}
               title={image.title}

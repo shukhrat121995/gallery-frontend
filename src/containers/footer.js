@@ -71,17 +71,6 @@ export function FooterContainer() {
               <Icon className="far fa-envelope" />
               shux121995@gmail.com
             </Footer.Link>
-            <Footer.Link
-              href="https://goo.gl/maps/ZJ9yfxRagsr6EoTE9"
-              target="_blank"
-            >
-              <Icon className="fas fa-map-marker-alt" />
-              Incheon, South Korea
-            </Footer.Link>
-            <Footer.Link href="mailto:nazarov7mu@gmail.com">
-              <Icon className="far fa-envelope" />
-              nazarov7mu@gmail.com
-            </Footer.Link>
           </Footer.Column>
         </Footer.Row>
       </Footer.Wrapper>

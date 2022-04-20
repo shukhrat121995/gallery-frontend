@@ -95,7 +95,7 @@ class Search extends React.PureComponent {
                 <UnsplashImage
                   url={img.image_thumbnail}
                   key={Math.random()}
-                  desc={img.collection}
+                  desc={img.collection.title}
                   full={img.image}
                   down={img.image}
                 />
