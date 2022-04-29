@@ -7,6 +7,22 @@
   padding: 1rem;
 }
 
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.icons {
+  padding: 1rem;
+}
+
+.control-icons {
+  width: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
 .wrapper-image {
   display: grid;
   width: 1240px;
