@@ -3,9 +3,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 import { faPenToSquare } from "@fortawesome/free-regular-svg-icons";
 import ReactHtmlParser from "react-html-parser";
+import axios from "axios";
 import "./Characters.css";
 
-export const UnsplashImage = ({ url, desc, title, rank }) => {
+export const UnsplashImage = ({ url, desc, title, rank, id }) => {
+  const handleDelete = (e) => {
+    axios.delete(`${process.env.REACT_APP_API_URL}/api/category/${id}`, {
+      headers: {
+        Authorization: `Token b22a480401b12d15c7d2d6ef4bad5722e093772b`,
+      },
+    });
+    window.location.reload(false);
+  };
   return (
     <div className="main-container">
       <div className="character-container">
@@ -23,6 +32,7 @@ export const UnsplashImage = ({ url, desc, title, rank }) => {
             icon={faTrashCan}
             size="3x"
             className="icons"
+            onClick={handleDelete}
           ></FontAwesomeIcon>
           <FontAwesomeIcon
             icon={faPenToSquare}

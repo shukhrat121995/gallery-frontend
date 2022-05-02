@@ -83,6 +83,7 @@ export default function Characters() {
             <UnsplashImage
               url={`${process.env.REACT_APP_API_URL}` + image.image}
               key={Math.random()}
+              id={image.id}
               rank={image.rank}
               title={image.title}
               desc={image.description}
