@@ -30,7 +30,10 @@ export const UnsplashImage = ({
   const handleClick = () => setClick(!click);
 
   const incrementViews = () => {
-    axios.get(`${process.env.REACT_APP_API_URL}/api/increment-views/${id}`);
+    console.log(id);
+    axios.patch(`${process.env.REACT_APP_API_URL}/api/wallpaper/${id}/`, {
+      option: "inc-views",
+    });
   };
 
   return (
@@ -63,7 +66,7 @@ export const UnsplashImage = ({
             {title}
           </p>
           <p className="title" style={{ marginBottom: "1rem" }}>
-            <i class="far fa-eye"></i>&nbsp;&nbsp;{views}
+            <i className="far fa-eye"></i>&nbsp;&nbsp;{views}
           </p>
         </div>
         <span className="title">{date}</span>
