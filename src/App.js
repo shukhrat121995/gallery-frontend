@@ -10,6 +10,7 @@ import Search from "./components/pages/Search";
 import License from "./components/pages/Licence";
 import { FooterContainer } from "./containers/footer";
 import ScrollToTop from "./components/content/ScrollToTop";
+import Edit from "./components/characters/EditCharacter";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/contact-us" exact component={ContactUs} />
           <Route path="/license" exact component={License} />
           <Route path="/search" exact component={Search} />
+          <Route path="/edit" component={Edit} />
         </Switch>
       </ScrollToTop>
       <FooterContainer />
