@@ -8,7 +8,7 @@ import "./Characters.css";
 
 export const UnsplashImage = ({ url, desc, title, rank, id }) => {
   const handleDelete = (e) => {
-    axios.delete(`${process.env.REACT_APP_API_URL}/api/category/${id}`, {
+    axios.delete(`${process.env.REACT_APP_API_URL}/api/category/${id}/`, {
       headers: {
         Authorization: `Token e9006325f054eb38ea61c261514faecd3a1ec129`,
       },
@@ -39,7 +39,7 @@ export const UnsplashImage = ({ url, desc, title, rank, id }) => {
             icon={faPenToSquare}
             size="3x"
             className="icons"
-            onClick={() => window.open(`/edit/1${id}`, "_blank")}
+            onClick={() => window.open(`/edit/${id}`, "_blank")}
           ></FontAwesomeIcon>
         </div>
       </div>
